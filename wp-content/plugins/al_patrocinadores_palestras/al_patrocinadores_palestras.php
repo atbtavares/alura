@@ -10,5 +10,5 @@ if(!defined('ABSPATH')){
 	die;
 
 }
-
+ //error_log("estou dentro do plugin");
 require_once plugin_dir_path(__FILE__) . '/includes/al_patrocinadores_palestras_widget.php';

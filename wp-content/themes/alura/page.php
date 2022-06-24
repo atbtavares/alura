@@ -18,5 +18,6 @@ endif;
         ?>
     </section>
     </section>
+<p>dentro do arquivo page.php</p>
 <?php
 get_footer();
