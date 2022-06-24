@@ -1,0 +1,487 @@
+
+$blue:      #03a9f4;
+$dark-blue: #003864;
+$dark:      #515151;
+$aqua:       #00bcd4;
+$red:       #f44336;
+$orange:     #ff7800;
+$green:         #8bc34a;
+
+// Breakpoints
+@mixin breakpoint($point) {
+    @if $point == xs {
+        @media (min-width: 420px) { @content; }
+    } @else if $point == sm {
+        @media (min-width: 640px) { @content; }
+    } @else if $point == md {
+        @media (min-width: 960px)  { @content; }
+    } @else if $point == lg {
+        @media (min-width: 1024px)  { @content; }
+    } @else if $point == xl {
+        @media (min-width: 1600px)  { @content; }
+    }
+}
+
+@mixin flex-row-wrap {
+    display: flex; // enables a flex context for all its direct children
+    flex-flow: row wrap; // flex items will wrap onto multiple lines, from top to bottom
+}
+
+// Clearfix
+@mixin clear {
+    &:before,
+    &:after {
+        display: table;
+        content: '';
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.wps-status {
+    color: #fff;
+    padding: 5px 10px 6px 10px;
+    display: inline-block;
+    border-radius: 2px;
+
+    @include breakpoint(md) {
+        position: absolute;
+       // margin: 5px 0;
+    }
+}
+
+.wps-status-good {
+    background:$green;
+}
+
+.wps-status-bad {
+    background: $red;
+}
+
+.wps-tools {
+    
+    @include breakpoint(md) {
+        width: calc(100% - 300px);
+    }
+
+    ul {
+        margin: 15px 0;
+        padding: 0;
+        
+        @include breakpoint(md) {
+            @include flex-row-wrap;
+            justify-content: flex-end;
+            margin: 0;
+        }
+    }
+
+    li {
+        padding: 2px 6px 3px 6px;
+        cursor: pointer;
+        display: block;
+        margin: 5px 0;
+        border-radius: 2px;
+        color: rgba($dark, .5);
+        //background: rgba($dark, .05);
+
+        @include breakpoint(md) {
+            margin: 0 -5px 0 5px;
+        }
+
+        &:hover {
+            background: rgba($aqua, .15);
+            color: $aqua;
+            //border: solid 1px rgba($aqua, .1);
+        }
+
+        &.active {
+            background: $aqua;
+            color: #fff;
+            //border: solid 1px rgba($aqua, .1);
+        }
+    }
+}
+
+.tools_page_wp-system {
+
+    width: 100%;
+
+    .updated {
+        @include breakpoint(md) {
+            width: calc(100% - 355px) !important;
+        }
+    }
+
+    .ir-info {
+        margin: 20px 0 0 0;
+        width: 100%;
+
+        @include breakpoint(md) {
+            width: calc(100% - 300px);
+        }
+    }
+    
+    .ir-info thead h2 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+    
+    tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+    
+    .info-log {
+        height: 200px;
+        width: 100%;
+        font-family: monospace;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .send-report-form {
+        display: none;
+        margin: 0 0 10px 0;
+    }
+
+    .cancel-report-send {
+        display: inline-block;
+        margin: 0 0 0 5px;
+        cursor: pointer;
+    }
+
+    #recipient {
+        padding: 5px;
+        width: 250px;
+        margin: 0 5px 0 0;
+    }
+    
+    .pre-log {
+        margin: 0 !important;
+        opacity: 0;
+        height: 0;
+        z-index: -1;
+        position: relative;
+        width: calc(100% - 300px);
+    }
+    
+    .reveal {
+        height: 200px;
+        opacity: 1;
+        margin: 0 0 25px 0 !important;
+        z-index: 1;
+    }
+
+    .medium_warning {
+        td {
+            color: $orange !important;
+            background: rgba($orange, .1);
+            font-weight: bold;
+
+            a {
+                color: $orange !important;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .high_warning {
+        td {
+            color: $red !important;
+            background: rgba($red, .05);
+            font-weight: bold;
+
+            a {
+                color: $red !important;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .good {
+        &::before {
+            content: '\2713';
+            color: #fff;
+            padding: 2px 5px;
+            background: #64b450;
+            font-size: .7em;
+            border-radius: 2px;
+            line-height: .7em;
+        }
+        
+    }
+
+    table {
+        &.active {
+            visibility: visible;
+        }
+    }
+
+    td {
+
+        word-break: break-word;
+
+        button {
+            margin: 5px 0 0 0 !important;
+        }
+
+        .wps-edit {
+            color: $aqua;
+            padding: 2px 5px;
+            background: rgba($aqua, .1);
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-size: .85em;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    tr td {
+        font-family: monospace;
+        position: relative;
+    }
+
+    tr:hover {
+        td {
+            background: rgba($blue, .15);
+
+            .wps-edit {
+                background: #fff;
+            }
+        }
+    }
+    
+    tr td:nth-child(2) {
+        font-family: monospace;
+    }
+
+    .help {
+        font-style: normal;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        margin: 0 0 0 3px;
+        z-index: 9;
+        word-break: break-word;
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 14px;
+            background: url('../images/help.svg') no-repeat center;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        &:hover {
+            span {
+                display: block;
+            }
+        }
+
+        span {
+            font-weight: normal;
+            padding: 15px;
+            background: $dark-blue;
+            color: #fff;
+            width: 185px;
+            height: auto;
+            position: absolute;
+            left: -13px;
+            bottom: 23px;
+            line-height: 1.4em;
+            font-family: Arial, Helvetica, sans-serif;
+            display: none;
+
+            a {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 15px;
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 5px 0 5px;
+                border-color: $dark-blue transparent transparent transparent;
+                position: absolute;
+                bottom: -10px;
+                left: 15px;
+
+            }
+        }
+    }
+}
+
+// Thinner scrollbars
+.my-stuff::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(#fff, .6);
+}
+
+.my-stuff::-webkit-scrollbar-thumb {
+    background-color: #cb8ada;
+    border-radius: 10px;
+}
+
+
+.my-stuff {
+    display: block;
+    width: 300px;
+    height: 100%;
+    background: #9a6db2;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    box-sizing: border-box;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @media only screen and (max-width: 960px) {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: calc(100% - 25px);
+        margin: 25px 0 0 0;
+    }
+
+    @media (max-height: 940px) {
+        .testimonial-03 {
+            display: none;
+        }
+    }
+    @media (max-height: 750px) {
+        .testimonial-02 {
+            display: none;
+        }
+    }
+    @media (max-height: 570px) {
+        .rocket-apps-logo {
+            width: 95px;
+        }
+    }
+
+    .valign {
+        // position: absolute;
+        // top: 50%;
+        // transform: translateY(-50%);
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 0 25px 0;
+            padding: 0;
+
+            span {
+                display: block;
+                text-align: center;
+                margin: 5px 0 0 0;
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.rocket-apps-logo {
+    display: block;
+    width: 125px;
+    margin: 20px auto 0 auto;
+}
+
+.testimonial {
+    line-height: 1.4em;
+    border-bottom: dashed 1px rgba(#fff, .2);
+    margin: 0;
+    padding: 25px 0;
+
+    img {
+        width: 60px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    span {
+        display: block;
+    }
+
+    .title {
+        display: block;
+        opacity: .7;
+    }
+
+    em {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .name {
+        margin: 3px 0;
+    }
+}
+
+.cta {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    background: $orange;
+    border-radius: 4px;
+    box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    margin: 25px auto;
+    font-weight: bold;
+    max-width: 150px;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.wps-spin {
+    display: none;
+    position: relative;
+    top: 5px;
+}

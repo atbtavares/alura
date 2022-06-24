@@ -1,0 +1,605 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: WP System\n"
+"POT-Creation-Date: 2019-04-25 11:41+0800\n"
+"PO-Revision-Date: 2019-04-25 11:41+0800\n"
+"Language-Team: Michael Ott <hello@michaelott.id.au>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-system.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Michael Ott <hello@michaelott.id.au>\n"
+"Language: en_AU\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: my-tools.php:6
+msgid "My other WordPress tools"
+msgstr "My other WordPress tools"
+
+#: my-tools.php:31
+msgid "Get Rocket Apps"
+msgstr "Get Rocket Apps"
+
+#: report.php:109
+#, php-format
+msgid ""
+"WordPress will operate with at least PHP %1$s, although PHP 7.3 or greater "
+"is recommended."
+msgstr ""
+"WordPress will operate with at least PHP %1$s, although PHP 7.3 or greater "
+"is recommended."
+
+#: report.php:110
+#, php-format
+msgid ""
+"WordPress will operate with at least MySQL %1$s, although MySQL 5.6 or "
+"greater is recommended."
+msgstr ""
+"WordPress will operate with at least MySQL %1$s, although MySQL 5.6 or "
+"greater is recommended."
+
+#: report.php:125
+#, php-format
+msgid ""
+"Secure Sockets Layer (<a href=\"%1$s\" target=\"_blank\" rel=\"noopener"
+"\">SSL</a>) is an encryption protocol that provides secure communication "
+"over a network, therby preventing attackers from intercepting your website "
+"data."
+msgstr ""
+"Secure Sockets Layer (<a href=\"%1$s\" target=\"_blank\" rel=\"noopener"
+"\">SSL</a>) is an encryption protocol that provides secure communication "
+"over a network, therby preventing attackers from intercepting your website "
+"data."
+
+#: report.php:296 report.php:523
+msgid "built-in"
+msgstr "built-in"
+
+#: report.php:380
+msgid ""
+"If this value is too small, you may have trouble uploading files and "
+"submitting forms."
+msgstr ""
+"If this value is too small, you may have trouble uploading files and "
+"submitting forms."
+
+#: report.php:392
+#, php-format
+msgid ""
+"Either increase post_max_size to above %1$sM or reduce upload_max_filesize "
+"to below %2$sM with the help of <a href=\"%3$s\" target=\"_blank\" rel="
+"\"noopener\">this guide</a>."
+msgstr ""
+"Either increase post_max_size to above %1$sM or reduce upload_max_filesize "
+"to below %2$sM with the help of <a href=\"%3$s\" target=\"_blank\" rel="
+"\"noopener\">this guide</a>."
+
+#: report.php:403
+msgid "Yes"
+msgstr "Yes"
+
+#: report.php:405 report.php:413
+msgid "No"
+msgstr "No"
+
+#: report.php:410 report.php:560 report.php:569 report.php:579 report.php:587
+#: report.php:610
+msgid "Enabled"
+msgstr "Enabled"
+
+#: report.php:415
+msgid "Enabling SSL is always recommended."
+msgstr "Enabling SSL is always recommended."
+
+#: report.php:422
+#, php-format
+msgid ""
+"You are running an outdated version of MySQL. WordPress <a href=\"%1$s\" "
+"target=\"_blank\" rel=\"noopener\">recommends</a> at least MySQL 5.6 or "
+"MariaDB 10."
+msgstr ""
+"You are running an outdated version of MySQL. WordPress <a href=\"%1$s\" "
+"target=\"_blank\" rel=\"noopener\">recommends</a> at least MySQL 5.6 or "
+"MariaDB 10."
+
+#: report.php:436
+#, php-format
+msgid ""
+"Your version of PHP has or will soon reach <a href=\"%1$s\" target=\"_blank"
+"\" rel=\"noopener\">end of life</a> status. WordPress <a href=\"%2$s\" "
+"target=\"_blank\" rel=\"noopener\">recommends</a> PHP 7.3 or greater."
+msgstr ""
+"Your version of PHP has or will soon reach <a href=\"%1$s\" target=\"_blank"
+"\" rel=\"noopener\">end of life</a> status. WordPress <a href=\"%2$s\" "
+"target=\"_blank\" rel=\"noopener\">recommends</a> PHP 7.3 or greater."
+
+#: report.php:448
+msgid ""
+"Performnace may become an issue. Increase the WordPress memory limit if "
+"possible."
+msgstr ""
+"Performnace may become an issue. Increase the WordPress memory limit if "
+"possible."
+
+#: report.php:467
+#, php-format
+msgid "<a href=\"%1$s\">Update</a> to the latest WordPress."
+msgstr "<a href=\"%1$s\">Update</a> to the latest WordPress."
+
+#: report.php:482
+msgid ""
+"The default insecure database prefix is in use. Change the prefix with the "
+"aid of a suitable plugin."
+msgstr ""
+"The default insecure database prefix is in use. Change the prefix with the "
+"aid of a suitable plugin."
+
+#: report.php:553
+msgid "Not enabled"
+msgstr "Not enabled"
+
+#: report.php:562 report.php:571 report.php:581 report.php:589 report.php:612
+msgid "Disabled"
+msgstr "Disabled"
+
+#: report.php:626 send.php:25
+msgid "Issues found"
+msgstr "Issues found"
+
+#: report.php:631
+msgid "All Good"
+msgstr "All Good"
+
+#: report.php:637
+msgid "All"
+msgstr "All"
+
+#: report.php:638
+msgid "Issues"
+msgstr "Issues"
+
+#: report.php:639 report.php:652 send.php:26
+msgid "WordPress Environment"
+msgstr "WordPress Environment"
+
+#: report.php:640 report.php:819 send.php:60
+msgid "Server Environment"
+msgstr "Server Environment"
+
+#: report.php:641 report.php:945 send.php:84
+msgid "Feed URLs"
+msgstr "Feed URLs"
+
+#: report.php:642 report.php:987 send.php:93
+msgid "Counts"
+msgstr "Counts"
+
+#: report.php:643 report.php:1060 send.php:101
+msgid "Media"
+msgstr "Media"
+
+#: report.php:644 report.php:1107 send.php:111
+msgid "You"
+msgstr "You"
+
+#: report.php:658 send.php:28
+msgid "Domain name"
+msgstr "Domain name"
+
+#: report.php:663 send.php:29
+msgid "Current theme name"
+msgstr "Current theme name"
+
+#: report.php:668 send.php:30
+msgid "Current theme version"
+msgstr "Current theme version"
+
+#: report.php:673 send.php:31
+msgid "WordPress version"
+msgstr "WordPress version"
+
+#: report.php:678 send.php:32
+msgid "Stylesheet URL"
+msgstr "Stylesheet URL"
+
+#: report.php:683 send.php:33
+msgid "Stylesheet directory"
+msgstr "Stylesheet directory"
+
+#: report.php:688 send.php:34
+msgid "Pingback URL"
+msgstr "Pingback URL"
+
+#: report.php:693 send.php:35
+msgid "WordPress address (URL)"
+msgstr "WordPress address (URL)"
+
+#: report.php:698 send.php:36
+msgid "Site address (URL)"
+msgstr "Site address (URL)"
+
+#: report.php:703 send.php:37
+msgid "Site title"
+msgstr "Site title"
+
+#: report.php:705 report.php:710 report.php:715 report.php:720 report.php:725
+#: report.php:730 report.php:735 report.php:740 report.php:745 report.php:750
+#: report.php:755 report.php:770 report.php:810
+msgid "Edit"
+msgstr "Edit"
+
+#: report.php:708 send.php:38
+msgid "Tagline"
+msgstr "Tagline"
+
+#: report.php:713 send.php:39
+msgid "Language"
+msgstr "Language"
+
+#: report.php:718 send.php:42
+msgid "Timezone"
+msgstr "Timezone"
+
+#: report.php:723 send.php:43
+msgid "Week start day"
+msgstr "Week start day"
+
+#: report.php:728 send.php:44
+msgid "Date format"
+msgstr "Date format"
+
+#: report.php:733 send.php:45
+msgid "Time format"
+msgstr "Time format"
+
+#: report.php:738 send.php:46
+msgid "Posts per page"
+msgstr "Posts per page"
+
+#: report.php:743
+msgid "Anyone can register"
+msgstr "Anyone can register"
+
+#: report.php:748 send.php:48
+msgid "Mail server port"
+msgstr "Mail server port"
+
+#: report.php:753 send.php:49
+msgid "Permalink structure"
+msgstr "Permalink structure"
+
+#: report.php:758 send.php:50
+msgid "Stylesheet"
+msgstr "Stylesheet"
+
+#: report.php:763 send.php:51
+msgid "HTML type"
+msgstr "HTML type"
+
+#: report.php:768 send.php:52
+msgid "Admin email"
+msgstr "Admin email"
+
+#: report.php:773 send.php:40
+msgid "Multisite"
+msgstr "Multisite"
+
+#: report.php:778 send.php:41
+msgid "Active plugins"
+msgstr "Active plugins"
+
+#: report.php:780
+msgid "Manage Plugins"
+msgstr "Manage Plugins"
+
+#: report.php:783 send.php:53
+msgid "Database table prefix"
+msgstr "Database table prefix"
+
+#: report.php:788 send.php:54
+msgid "Database size"
+msgstr "Database size"
+
+#: report.php:793 send.php:55
+msgid "WordPress memory limit"
+msgstr "WordPress memory limit"
+
+#: report.php:798 send.php:56
+msgid "Registered roles"
+msgstr "Registered roles"
+
+#: report.php:803 send.php:57
+msgid "Registered post types"
+msgstr "Registered post types"
+
+#: report.php:808 send.php:58
+msgid "Search engine visibility"
+msgstr "Search engine visibility"
+
+#: report.php:825
+msgid "Server IP address"
+msgstr "Server IP address"
+
+#: report.php:830 send.php:62
+msgid "PHP version"
+msgstr "PHP version"
+
+#: report.php:835 send.php:63
+msgid "MySQL version"
+msgstr "MySQL version"
+
+#: report.php:840 send.php:64
+msgid "Server software"
+msgstr "Server software"
+
+#: report.php:845 send.php:65
+msgid "Server admin"
+msgstr "Server admin"
+
+#: report.php:850 send.php:66
+msgid "PHP memory"
+msgstr "PHP memory"
+
+#: report.php:855 send.php:67
+msgid "Upload max filesize"
+msgstr "Upload max filesize"
+
+#: report.php:860 send.php:68
+msgid "Post max size"
+msgstr "Post max size"
+
+#: report.php:865
+msgid "Common Gateway Interface"
+msgstr "Common Gateway Interface"
+
+#: report.php:870 send.php:70
+msgid "Document root"
+msgstr "Document root"
+
+#: report.php:875 send.php:71
+msgid "Character set"
+msgstr "Character set"
+
+#: report.php:880 send.php:72
+msgid "Server port"
+msgstr "Server port"
+
+#: report.php:885 send.php:73
+msgid "SSL"
+msgstr "SSL"
+
+#: report.php:890 send.php:74
+msgid "Display errors"
+msgstr "Display errors"
+
+#: report.php:897 send.php:75
+msgid "PHP from external sources"
+msgstr "PHP from external sources"
+
+#: report.php:902 send.php:76
+msgid "cURL version"
+msgstr "cURL version"
+
+#: report.php:907 send.php:77
+msgid "SOAP"
+msgstr "SOAP"
+
+#: report.php:912 send.php:78
+msgid "GD"
+msgstr "GD"
+
+#: report.php:917 send.php:79
+msgid "ImageMagick"
+msgstr "ImageMagick"
+
+#: report.php:922 send.php:80
+msgid "Keep alive"
+msgstr "Keep alive"
+
+#: report.php:927 send.php:81
+msgid "Cache control"
+msgstr "Cache control"
+
+#: report.php:932 send.php:82
+msgid "Server protocol"
+msgstr "Server protocol"
+
+#: report.php:951 send.php:86
+msgid "Atom URL"
+msgstr "Atom URL"
+
+#: report.php:956 send.php:87
+msgid "RDF/RSS 1.0 feed URL"
+msgstr "RDF/RSS 1.0 feed URL"
+
+#: report.php:961 send.php:88
+msgid "RSS 0.92 feed URL"
+msgstr "RSS 0.92 feed URL"
+
+#: report.php:966 send.php:89
+msgid "RSS 2.0 feed URL"
+msgstr "RSS 2.0 feed URL"
+
+#: report.php:971 send.php:90
+msgid "Comments Atom feed URL"
+msgstr "Comments Atom feed URL"
+
+#: report.php:976 send.php:91
+msgid "Comments RSS 2.0 feed URL"
+msgstr "Comments RSS 2.0 feed URL"
+
+#: report.php:993 send.php:95
+msgid "Pages"
+msgstr "Pages"
+
+#: report.php:998 send.php:96
+msgid "Posts"
+msgstr "Posts"
+
+#: report.php:1010 send.php:97
+msgid "Revisions"
+msgstr "Revisions"
+
+#: report.php:1017
+#, php-format
+msgid ""
+"A little high. On average, for every 1 page there are approximately %1$s "
+"revisions."
+msgstr ""
+"A little high. On average, for every 1 page there are approximately %1$s "
+"revisions."
+
+#: report.php:1023
+msgid "Delete Revisions?"
+msgstr "Delete Revisions?"
+
+#: report.php:1030
+msgid ""
+"Permanently delete all revsions? This might take a while. Back up your "
+"database first in case you change your mind."
+msgstr ""
+"Permanently delete all revsions? This might take a while. Back up your "
+"database first in case you change your mind."
+
+#: report.php:1044 send.php:98
+msgid "Users"
+msgstr "Users"
+
+#: report.php:1049 send.php:99
+msgid "Syndication feed posts"
+msgstr "Syndication feed posts"
+
+#: report.php:1066 send.php:103
+msgid "Text files"
+msgstr "Text files"
+
+#: report.php:1071 send.php:104
+msgid "Audio files"
+msgstr "Audio files"
+
+#: report.php:1076 send.php:105
+msgid "Office files"
+msgstr "Office files"
+
+#: report.php:1081 send.php:106
+msgid "Misc files"
+msgstr "Misc files"
+
+#: report.php:1086 send.php:107
+msgid "Images"
+msgstr "Images"
+
+#: report.php:1091 send.php:108
+msgid "Total media files"
+msgstr "Total media files"
+
+#: report.php:1096 send.php:109
+msgid "Registered image sizes"
+msgstr "Registered image sizes"
+
+#: report.php:1113 send.php:113
+msgid "Your IP address"
+msgstr "Your IP address"
+
+#: report.php:1118 send.php:114
+msgid "Remote port"
+msgstr "Remote port"
+
+#: report.php:1123 send.php:115
+msgid "Do not track"
+msgstr "Do not track"
+
+#: report.php:1128 send.php:116
+msgid "User agent"
+msgstr "User agent"
+
+#: report.php:1133 send.php:117
+msgid "Accepted content types"
+msgstr "Accepted content types"
+
+#: report.php:1138 send.php:118
+msgid "Encrypted/authenticated response preference"
+msgstr "Encrypted/authenticated response preference"
+
+#: report.php:1143 send.php:119
+msgid "Accept language"
+msgstr "Accept language"
+
+#: send.php:23 send.php:24
+msgid "WordPress System Report for"
+msgstr "WordPress System Report for"
+
+#: send.php:47
+msgid "Users can register"
+msgstr "Users can register"
+
+#: send.php:69
+msgid "Gateway interface"
+msgstr "Gateway interface"
+
+#: send.php:121
+#, php-format
+msgid ""
+"This report was generated and sent by <a href=\"%1$s\">WP System</a> for "
+"WordPress. Plugin by <a href=\"%2$s\">Rocket Apps</a>."
+msgstr ""
+"This report was generated and sent by <a href=\"%1$s\">WP System</a> for "
+"WordPress. Plugin by <a href=\"%2$s\">Rocket Apps</a>."
+
+#: send.php:125
+msgid "From"
+msgstr "From"
+
+#: wp-system.php:61
+#, php-format
+msgid ""
+"<strong>WP System activated.</strong> Check your system status <a href=\"%s"
+"\">here</a>."
+msgstr ""
+"<strong>WP System activated.</strong> Check your system status <a href=\"%s"
+"\">here</a>."
+
+#. Plugin Name of the plugin/theme
+#: wp-system.php:73
+msgid "WP System"
+msgstr "WP System"
+
+#: wp-system.php:79
+#, php-format
+msgid "The system report was sent to %1$s"
+msgstr "The system report was sent to %1$s"
+
+#: wp-system.php:87
+#, php-format
+msgid "%1$s revisions were deleted."
+msgstr "%1$s revisions were deleted."
+
+#: wp-system.php:87
+msgid "Dismiss this notice."
+msgstr "Dismiss this notice."
+
+#: wp-system.php:106
+msgid "Email This Report"
+msgstr "Email This Report"
+
+#. Plugin URI of the plugin/theme
+msgid "https://rocketapps.com.au/"
+msgstr "https://rocketapps.com.au/"
+
+#. Description of the plugin/theme
+msgid "Easily spot issues with your WordPress environment and server settings."
+msgstr ""
+"Easily spot issues with your WordPress environment and server settings."
+
+#. Author of the plugin/theme
+msgid "Michael Ott"
+msgstr "Michael Ott"
